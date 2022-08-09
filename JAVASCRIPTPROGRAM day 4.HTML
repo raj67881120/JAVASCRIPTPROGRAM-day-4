@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECLARE VARIABLE IN JAVASCRIPT</title>
+    <script type="text/javascript">
+        function add(){
+            prompt("eneter value of a");
+            prompt("enete bvalue b")
+        }
+    </script>
+    <style>
+        body{
+            text-align: justify;
+        }
+        h2{
+            background-color: black;
+            color: white;
+            font-size: 4vh;
+        }
+        h4{
+            font-size: 5vh;
+            text-align: center;
+            text-decoration: underline;
+        }
+        #DIV1,#DIV2{
+            background-color: lightslategray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h4>GIVE VALUE ON VARIABLE</h4>
+    <h2>DEMO OF ASSIGN VALUE ON VARIABLE</h2>
+    <div id="DIV1">
+    <p>IF A IS DEFINED AS VARIABLE.THEN,A ARE ASSIGNED VALUE OF 23:</p>
+    <p>IF B IS DEFINED AS VARIABLE.THEN,B ARE ASSIGNED VALUE OF 43:</p>
+    <p>IF C IS DEFINED AS VARIABLE.THEN,C ARE ASSIGNED VALUE OF 53:</p>
+    <p id="valuea">is</p>
+    <p id="valueb">is</p>
+    <p id="valuec">is</p>
+    <script>
+        var A;
+        var B;
+        var C;
+        A=23;
+        B=43;
+        C=53;
+        document.getElementById("valuea").innerHTML = "VALUE OF A IS:"+A;
+        document.getElementById("valueb").innerHTML = "VALUE OF B IS:"+B;
+        document.getElementById("valuec").innerHTML = "VALUE OF C IS:"+C;;
+    </script>
+    </div>
+    <h2>DEMO OF SUM OF VARIABLE</h2>
+    <div id="DIV2">
+    <p>IF A IS DEFINED AS VARIABLE.THEN,A ARE ASSIGNED VALUE OF 23:</p>
+    <p>IF B IS DEFINED AS VARIABLE.THEN,B ARE ASSIGNED VALUE OF 43:</p>
+    <p>IF C IS DEFINED AS VARIABLE.THEN,C ARE ASSIGNED VALUE OF 53:</p>
+        <p id="ADD"></p>
+        <p id="SUB"></p>
+        <p id="MUL"></p>
+        <p id="DIV"></p>
+        <p id="MOD"></p>
+        <p id="SUM"></p>
+        <script>
+            var A = 23;
+            var B = 43;
+            var C = 53;
+            let D=63,E=50;
+            var ADD = A + B + C;
+            var SUB = A - B - C;
+            var MUL = A * B * C;
+            var DIV = A / B / C;
+            var MOD = A % B % C;
+            let SUM = A + B - C * D / E;
+            document.getElementById("ADD").innerHTML = "THE VALUE OF ADDITION :"+" "+ ADD;
+            document.getElementById("SUB").innerHTML = "THE VALUE OF SUBTRACTION : "+" "+ SUB;
+            document.getElementById("MUL").innerHTML = "THE VALUE OF MULTIPLICATION : "+" "+ MUL;
+            document.getElementById("DIV").innerHTML = "THE VALUE OF DIVISION :"+" "+ DIV;
+            document.getElementById("MOD").innerHTML = "THE VALUE OF MODULUS :"+" "+ MOD;
+            document.getElementById("SUM").innerHTML = "THE VALUE OF SUM :"+" "+ SUM;
+        </script>
+    </div>
+</body>
+</html>
